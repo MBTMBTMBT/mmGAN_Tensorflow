@@ -404,8 +404,10 @@ if __name__ == '__main__':
     # get_files_with_full_path(r"D:\python\BRATS2018\validation", "seg")
     # arrange_data_into_5_folds(r"D:\python\BRATS2018\training\HGG", shuffle=True)
     # standardize_channel(np.random.randn(155, 240, 240))
+
     '''arrange_data_into_5_folds(r"E:\my_files\programmes\python\BRATS2018\training\HGG",
                               r"E:\my_files\programmes\python\BRATS2018_normalized", shuffle=True)'''
+
     preprocess(r"E:\my_files\programmes\python\BRATS2018_normalized", TXT_NAMES,
                r"E:\my_files\programmes\python\BRATS2018_normalized", CHANNELS)
     nii_to_tfrecord(r"E:\my_files\programmes\python\BRATS2018_normalized", TXT_OUT_NAMES,
